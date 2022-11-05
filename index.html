@@ -15,6 +15,8 @@
         rel="stylesheet">
     <!-- animacion AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/1a7eb8c875.js" crossorigin="anonymous"></script>
     <!-- bootstrap / iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- css -->
@@ -34,10 +36,10 @@
                 <div class="menuHamburguesa-div">
                     <i class="bi bi-x menuHamburguesa-div__icon"></i>
                     <ul class="menuHamburguesa-div__list">
-                        <li><a href="#">Sobre Mí</a></li>
-                        <li><a href="#">Educación</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                        <li><a href="#">Contactos</a></li>
+                        <li><a href="#seccionSobreMi">Sobre Mí</a></li>
+                        <li><a href="#seccionEducacion">Educación</a></li>
+                        <li><a href="#seccionProyectos">Proyectos</a></li>
+                        <li><a href="#seccionContactos">Contactos</a></li>
                         <div class="buttom-container buttom-container--menuHamburguesa">
                             <a class="buttom buttom--menuHamburguesa" href="#">Mi CV</a>
                         </div>
@@ -45,10 +47,10 @@
                 </div>
                 <div class="menuStandar-div">
                     <ul class="menuStandar-div__list">
-                        <li><a href="#">Sobre Mí</a></li>
-                        <li><a href="#">Educación</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                        <li><a href="#">Contactos</a></li>
+                        <li><a href="#seccionSobreMi">Sobre Mí</a></li>
+                        <li><a href="#seccionEducacion">Educación</a></li>
+                        <li><a href="#seccionProyectos">Proyectos</a></li>
+                        <li><a href="#seccionContactos">Contactos</a></li>
                     </ul>
                 </div>
                 <div class="buttom-container buttom-container--cv">
@@ -112,7 +114,7 @@
 
 
         <!-- SECCION EDUCACION -->
-        <section class="educacion" data-aos="fade-up">
+        <section id="seccionEducacion"class="educacion" data-aos="fade-up">
             <div class="section-title-container">
                 <h3 class="section-title">Educación</h3>
                 <hr>
@@ -168,7 +170,7 @@
         </section>
 
         <!-- SECCION PROYECTOS -->
-        <section class="proyectos">
+        <section id="seccionProyectos" class="proyectos">
             <div class="section-title-container">
                 <h3 class="section-title">Proyectos</h3>
                 <hr>
@@ -228,7 +230,7 @@
         </section>
 
         <!-- CONTACTOS -->
-        <section class="contacto" data-aos="fade-up">
+        <section id="seccionContactos" class="contacto" data-aos="fade-up">
             <div class="section-title-container">
                 <h3 class="section-title">Contacto</h3>
                 <hr>
@@ -247,7 +249,7 @@
         <!-- REDES SOCIALES -->
         <section class="redesSociales">
             <a href="https://github.com/manumancio" target="_blank"><i class="bi bi-github redesSociales-icon"></i></a>
-            <a href="https://www.linkedin.com/in/manuelamancione/" target="_blank"><i class="bi bi-linkedin redesSociales-icon"></i></a>
+            <a href="https://www.linkedin.com/in/manuelamancione/" target="_blank"><i class="fa-brands fa-linkedin-in redesSociales-icon"></i></a>
             <a href="#" target="_blank"><i class="bi bi-envelope redesSociales-icon"></i></a>
         </section>
         <div>
@@ -259,7 +261,10 @@
 
 
     <footer>
-        <h5>Diseñado y construido por Manuela Mancione</h5>
+        <h5 class="footer-title">Diseñado & Desarrollado por Manuela Mancione</h5>
+        <i class="fa-regular fa-heart footer-iconos"></i>
+        <i class="fa-solid fa-bicycle footer-iconos"></i>       
+        <i class="fa-solid fa-microscope footer-iconos"></i>
     </footer>
 
     <!-- animacion aos - js -->
