@@ -260,7 +260,7 @@ nav {
 }
 
 .hero-subtitle {
-    color: #11698E;
+    color: #363a5d;
     padding: 6px ;
     font-size: 1.2rem;
     text-align: left;
@@ -507,7 +507,8 @@ progress[value]::-webkit-progress-value {
     width: 90%;
     padding: 20px;
     border-radius: 3px;
-    background-color: #11698E;
+    background-color: #414679;
+    box-shadow: 0.5px 0.5px 5px #262942a2;
     margin: 0 auto;
 }
 
@@ -641,16 +642,63 @@ progress[value]::-webkit-progress-value {
 
 .redesSociales-icon {
     color: #16C79A;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 10px;
     transition: 0.5s ease-in-out;
 }
 
+.redesSociales a:hover {
+    transform: translateY(-5px);
+    color:#E7D9EA;
+}
 .redesSociales-icon:hover {
-    transform: translateY(-10px);
-    color: red
+   color: #E7D9EA;
 }
 
+.redesSociales a{
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px)
+
+{
+    .redesSociales{
+        position: fixed;
+        left: 0.88rem;
+        bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0.2rem;
+    }
+
+    .redesSociales a {
+    margin: 0.5rem;
+
+    }
+
+    .hr-seccionFinal--icon {
+        transform: rotate(90deg);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 6.2rem;
+        margin: auto auto;
+        border-top: 1px solid #16C79A;
+
+    }
+
+}
+
+@media screen and (min-width:1024px){
+    .redesSociales{
+        margin: 2rem;
+
+    }
+
+    .hr-seccionFinal--icon {       
+        width: 10rem;  
+    }
+}
 
 /* footer */
 footer {
