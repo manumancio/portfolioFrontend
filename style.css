@@ -1,0 +1,617 @@
+body {
+    background-color: #363a5d;
+    font-family: 'Libre Franklin',
+        sans-serif;
+}
+
+@media screen and (min-width: 450px) {
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1024px) {
+    main {
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+
+h1 {
+    font-family: 'Libre Baskerville',
+        serif;
+}
+
+@media screen and (min-width: 450px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    font-family: 'Libre Baskerville',
+        serif;
+}
+
+h3 {
+    font-family: 'Libre Baskerville',
+        serif;
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-family: 'Libre Baskerville',
+        serif;
+}
+
+p {
+    color: #CCD6F6;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 1024px) {
+    p{
+        font-size: 1.08rem;
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+}
+
+.buttom-container {
+    text-align: center;
+    margin: 4rem;
+}
+
+.buttom {
+    text-decoration: none;
+    color: #E7D9EA;
+    border: 1px solid #E7D9EA;
+    padding: 12px 25px;
+    border-radius: 3px;
+
+}
+
+.buttom:hover {
+    background-color: #e7d9ea3d;
+    transition: 0.5s ease-in-out;
+}
+
+
+/* nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px
+}
+
+@media screen and (min-width: 1024px) {
+    nav {
+        padding: 5px 25px
+    }
+}
+
+.nav-icono {
+    font-size: 2.5rem;
+    color: #E7D9EA;
+}
+
+.menuStandar-div__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuStandar-div__list a {
+    text-decoration: none;
+    color: #E7D9EA;
+    font-family: 'Libre Baskerville';
+}
+
+.menuStandar-div__list a:hover {
+    color: #16C79A;
+    transition: 0.5s ease-in-out;
+}
+
+.menuStandar-div__list li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    width: 3rem;
+    padding-left: 1rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 850px) {
+    .menuHamburguesa-div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .menuStandar-div,
+    .buttom-container--cv {
+        display: none
+    }
+}
+
+.menuHamburguesa-div {
+    background-color: #11698E;
+    position: absolute;
+    width: 75%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    display: none;
+    /* activar con JS el menu hambrfuesa y agregar al main, header{
+    filter:blur(2px)
+}  */
+}
+
+@media screen and (min-width: 500px) {
+    .menuHamburguesa-div {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .menuHamburguesa-div {
+        width: 100%;
+    }
+}
+
+.menuHamburguesa-div__icon {
+    color: #E7D9EA;
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.9rem;
+}
+
+.menuHamburguesa-div__list {
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menuHamburguesa-div__list li {
+    list-style: none;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.menuHamburguesa-div__list a {
+    text-decoration: none;
+    color: #E7D9EA;
+}
+
+.buttom-container--menuHamburguesa {
+    margin: 0;
+    padding: 50px;
+}
+
+.buttom--menuHamburguesa {
+    padding: 10px 40px;
+    margin: 20px;
+}
+
+/* hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    height: 100vh;
+}
+@media screen and (max-width: 450px) {
+    .hero{
+         height: 80vh;
+    }
+}
+
+.hero-img {
+    width: 80%;
+    height: auto;
+    margin: 40px 0 5px;
+}
+
+.hero-title {
+    color: #16C79A;
+    margin: 0;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.hero-subtitle {
+    color: #11698E;
+    padding: 10px 0 0;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.hero-paragraph {
+    margin: 0;
+    line-height: 1.6;
+    padding: 0 1rem 1rem;
+}
+
+@media screen and (max-width: 450px){
+    .hero-paragraph, .hero-subtitle{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .hero {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero-img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .hero-title-div {
+        width: 30vw;
+        text-align: left
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .hero-subtitle-div {
+        width: 75%;
+        font-size: 1.3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* SECCION en general */
+main section {
+    padding: 5px;
+    margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    main section {
+         margin-top: 4.5rem;
+    }
+}
+
+.section-title {
+    color: #E7D9EA;
+    width: 50%;
+}
+
+.section-subtitle {
+    color: #16C79A;
+}
+
+.section-title-container {
+    display: flex;
+}
+
+hr {
+    display: inline;
+    width: 80%;
+    border: 0;
+    margin: auto auto;
+    border-top: 1px solid #e7d9ea46;
+}
+
+@media screen and (min-width: 600px) {
+    .section-title {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-title {
+        width: 20%;
+    }
+}
+
+
+/* SECCION sobre mi */
+
+.sobreMi-img {
+    text-align: center;
+    background-image: linear-gradient(rgba(22, 199, 155, 0.377), rgba(22, 199, 155, 0.377)),
+        url(./images/fotoPerfil.jpg);
+     min-width: 320px;
+     max-width: 350px;
+     height: 350px;
+    background-size: cover;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.sobreMi-img:hover {
+    background-image: url(./images/fotoPerfil.jpg);
+    transform: scale(1.02);
+    transition: 0.5s ease-in-out;
+}
+
+.sobreMi-paragraph {
+    margin-bottom: 4rem;    
+}
+
+@media screen and (min-width: 1100px) {
+    .sobreMi-container {
+        display: flex;
+    }    
+
+    .sobreMi-paragraph {
+        
+        padding: 0 2rem 0;
+    }    
+}
+
+
+/* SECCION educacion */
+
+.educacion-title {
+    color: #8892B0;
+    margin: 20px 0 0px;
+}
+
+.educacion-list {
+    color: #CCD6F6;
+    padding: 10px;
+    margin:0;
+}
+
+.educacion-list i {
+    padding: 0 7px 0 2px;
+    font-size: 0.7rem;
+    color: #16C79A;
+}
+
+.educacion-list li {
+    list-style: none;
+    padding: 10px 5px;
+    line-height: 1.5;
+}
+
+progress {
+    margin: 0 15px;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #e7d9eaa1;
+    border-radius: 3px;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #16c79ba1;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 600px) {
+    .educacion-div-line {
+        border-left: 1px solid #11698E;
+        padding-left: 4rem;
+    }
+}
+
+
+/* SECCION proyectos */
+
+.proyectos-container {
+    margin: 5rem 0;
+}
+
+.proyectos-title-div h5 {
+    color: #16C79A;
+    margin-bottom: 0;
+}
+
+.proyectos-title-div h4 {
+    color: #E7D9EA;
+    line-height: 1.5;
+    margin-top: 0.7rem;
+}
+
+.proyectos-imagen-div {
+    width: 90%;
+    height: 300px;
+    background-size: cover;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.proyectos-imagen-div--1 {
+    background-image: linear-gradient(rgba(22, 199, 155, 0.377), rgba(22, 199, 155, 0.377)),
+        url(./images/proyecto1.png);
+}
+
+.proyectos-imagen-div--1:hover {
+    background-image: url(./images/proyecto1.png);
+    transform: scale(1.02);
+    transition: 0.5s ease-in-out;
+}
+
+
+.proyectos-imagen-div--2 {
+    background-image: linear-gradient(rgba(22, 199, 155, 0.377), rgba(22, 199, 155, 0.377)),
+        url(./images/proyecto2.png);
+    transition: 0.5s ease-in-out;
+}
+
+.proyectos-imagen-div--2:hover {
+    background-image: url(./images/proyecto2.png);
+    transform: scale(1.02);
+}
+
+.proyectos-paragraph-div {
+    width: 90%;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #11698E;
+    margin: 0 auto;
+}
+
+.proyectos-paragraph-div p {
+    color: rgba(255, 255, 255, 0.932);
+}
+
+.proyectos-skills-div h5 {
+    word-spacing: 1rem;
+    color: #E7D9EA;
+}
+
+.proyectos-icons-div i {
+    font-size: 1.5rem;
+    color: #11698E;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.proyectos-icons-div i:hover {
+    transform: scale(1.5);
+    color: yellow;
+}
+
+@media screen and (min-width: 768px) {
+    .proyectos-paragraph-div {
+        width: 40%;
+        position: absolute;
+        display: block;
+    }
+
+    .proyectos-container {
+        margin: 2rem;
+    }
+
+    .proyectos-container--1 {
+        position: relative;
+        height: 60vh;
+    }
+
+    .proyectos-paragraph-div--1 {
+        left: 0;
+        top: 4.5rem;
+        width: 25vw;
+        z-index: 1000;
+    }
+
+    .proyectos-imagen-div--1 {
+        width: 45vw;
+        height: 400px;
+        position: absolute;
+        right: 0;
+        top: 4.5rem;
+    }
+
+    .proyectos-skills-div--1 {
+        position: absolute;
+        left: 0;
+        top: 20rem;
+    }
+
+    .proyectos-icons-div--1 {
+        position: absolute;
+        left: 0;
+        top: 23rem;
+    }
+
+    .proyectos-container--2 {
+        position: relative;
+        height: 60vh;
+    }
+
+    .proyectos-paragraph-div--2 {
+        right: 0;
+        top: 10rem;
+        width: 25vw;
+        height: 200px;
+        z-index: 1000;
+    }
+
+    .proyectos-imagen-div--2 {
+        width: 45vw;
+        height: 400px;
+        position: absolute;
+        left: 0;
+        top: 10rem;
+    }
+
+    .proyectos-skills-div--2 {
+        position: absolute;
+        right: 0;
+        top: 26rem;
+    }
+
+    .proyectos-icons-div--2 {
+        position: absolute;
+        right: 0;
+        top: 29rem;
+    }
+}
+
+
+/* SECCION contacto */
+
+.contacto-div {
+    text-align: center;
+}
+
+
+/* SECCION redes sociales */
+
+.redesSociales {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.redesSociales-icon {
+    color: #16C79A;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.redesSociales-icon:hover {
+    transform: translateY(-10px);
+    color: red
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+    color: #4cb0db94;
+}
