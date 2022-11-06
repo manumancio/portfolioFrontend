@@ -325,7 +325,7 @@ nav {
 /* SECCION en general */
 main section {
     padding: 5px;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -536,10 +536,19 @@ progress[value]::-webkit-progress-value {
     transition: 0.5s ease-in-out;
 }
 
-.proyectos-icons-div i:hover {
-    transform: scale(1.5);
+.proyectos-icons-div i:hover {    
     color: #16C79A;
 }
+
+
+
+.proyectos-icons-div a:hover {
+    transform: translateY(-5px);
+
+}
+
+
+
 
 @media screen and (max-width: 768px) {
  .proyectos-skills-div h5 {
@@ -651,8 +660,9 @@ progress[value]::-webkit-progress-value {
 
 .redesSociales a:hover {
     transform: translateY(-5px);
-    color:#E7D9EA;
+    
 }
+
 .redesSociales-icon:hover {
    color: #E7D9EA;
 }
