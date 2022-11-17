@@ -620,6 +620,11 @@ progress[value]::-webkit-progress-value {
         height: 60vh;
     }
 
+    
+    .proyectos-container--2{
+        margin-top: 10rem;
+    }
+    
     .proyectos-paragraph-div--1 {
         left: 0;
         top: 5.5rem;
