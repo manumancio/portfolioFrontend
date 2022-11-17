@@ -509,13 +509,6 @@ progress[value]::-webkit-progress-value {
     font-size: 1rem;
 }
 
-@media screen and (min-width: 768px) {
-    .proyectos-title-div:last-child {
-        margin-top: 3rem;
-    }
-}
-
-
 .proyectos-title-div h4 {
     color: #E7D9EA;
     line-height: 1.5;
@@ -615,7 +608,12 @@ progress[value]::-webkit-progress-value {
         position: relative;
         height: 60vh;
     }
-
+    
+    
+    .proyectos-container--2{
+        margin-top: 10rem;
+    }
+    
     .proyectos-paragraph-div--1 {
         left: 0;
         top: 5.5rem;
