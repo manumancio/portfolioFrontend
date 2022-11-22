@@ -5,46 +5,34 @@ const sobreMiButton = document.getElementById("sobreMiButton");
 const sobreMiParagraph = document.getElementsByClassName("sobreMiParagraph");
 const sobreMiButtonMas = document.getElementById("sobreMiButtonMas");
 const sobreMiDiv = document.getElementById("sobreMiDiv");
+let i = 0
 
 
 const cambiarTextoSobreMi = () => {
-    sobreMiButtonMas.style.display = "inline";
     sobreMiInput.style.display = "block";
-    sobreMiParagraph[0].textContent = sobreMiInput.value;
+    sobreMiParagraph[i].textContent = sobreMiInput.value;
+    console.log(i)
 }
 
-sobreMiButton.addEventListener('click', cambiarTextoSobreMi);
-sobreMiInput.addEventListener('keyup', cambiarTextoSobreMi);
-
-
-// funcion para fijar el texto al parrafo
-
 sobreMiInput.addEventListener("keyup", function (event) {
-    if (event.key === 'Enter') {
+    if (i < 4) {
+        if (event.key === 'Enter') {
+            sobreMiInput.style.display = "none";
+            sobreMiInput.value = sobreMiParagraph[i].textContent
+            i++
+            console.log(i)
+            sobreMiInput.value = ''
+        }
+    } else {
         sobreMiInput.style.display = "none";
-        sobreMiInput.value = sobreMiParagraph[0].textContent
-        // CORREGIR: guardar los cambios
+        alert("no se puede agregar mas párrafos");
     }
 });
 
 
-//funcion para agregar parrafo
-let i = 0
-const sumarParrafo = () => {
-    i++
-    console.log(i)
-    if (i < 4) {
-        sobreMiInput.style.display = "block";
-        sobreMiInput.value = ''
-        sobreMiParagraph[i].style.display = "none"
-        sobreMiParagraph[i].textContent = sobreMiInput.value;
-    } else {
-        alert("no se puede agregar mas párrafos")
-    }
-    // CORREGIR: guardar los cambios    
-}
+sobreMiButton.addEventListener('click', cambiarTextoSobreMi);
+sobreMiInput.addEventListener('keyup', cambiarTextoSobreMi);
 
-sobreMiButtonMas.addEventListener('click', sumarParrafo)
 
 
 
@@ -98,6 +86,7 @@ academicaInputTitle[0].addEventListener("keyup", function (event) {
     if (event.key === 'Enter') {
 
         academicaInputTitle[0].value = academicaTitle[0].textContent
+        academicaButtonMas.style.display = "inline";
         // CORREGIR: guardar los cambios
     }
 })
@@ -142,6 +131,7 @@ academicaButtonMas.addEventListener('click', () => {
     academicaInputTitle[1].addEventListener("keyup", function (event) {
         if (event.key === 'Enter') {
             academicaInputTitle[1].value = academicaTitle[1].textContent
+            academicaButtonMas.style.display = "inline";
             // CORREGIR: guardar los cambios
         }
     })
@@ -152,6 +142,7 @@ academicaButtonMas.addEventListener('click', () => {
             academicaInputParagraph[1].style.display = "none";
             academicaInputTitle[1].style.display = "none";
             academicaInputParagraph[1].value = academicaParagraph[1].textContent
+            academicaButtonMas.style.display = "inline";
             // CORREGIR: guardar los cambios
         }
     })
@@ -205,6 +196,7 @@ cursosInputTitle[0].addEventListener("keyup", function (event) {
     if (event.key === 'Enter') {
 
         cursosInputTitle[0].value = cursosTitle[0].textContent
+        cursosButtonMas.style.display = "inline";
         // CORREGIR: guardar los cambios
     }
 })
@@ -215,6 +207,7 @@ cursosInputParagraph[0].addEventListener("keyup", function (event) {
         cursosInputParagraph[0].style.display = "none";
         cursosInputTitle[0].style.display = "none";
         cursosInputParagraph[0].value = cursosParagraph[0].textContent
+        cursosButtonMas.style.display = "inline";
         // CORREGIR: guardar los cambios
     }
 })
@@ -249,6 +242,7 @@ cursosButtonMas.addEventListener('click', () => {
     cursosInputTitle[1].addEventListener("keyup", function (event) {
         if (event.key === 'Enter') {
             cursosInputTitle[1].value = cursosTitle[1].textContent
+            cursosButtonMas.style.display = "inline";
             // CORREGIR: guardar los cambios
         }
     })
@@ -258,7 +252,8 @@ cursosButtonMas.addEventListener('click', () => {
         if (event.key === 'Enter') {
             cursosInputParagraph[1].style.display = "none";
             cursosInputTitle[1].style.display = "none";
-            cursosInputParagraph[1].value = cursosParagraph[1].textContent
+            cursosInputParagraph[1].value = cursosParagraph[1].textContent;
+            cursosButtonMas.style.display = "inline";
             // CORREGIR: guardar los cambios
         }
     })
@@ -312,6 +307,7 @@ idiomasInputTitle[0].addEventListener("keyup", function (event) {
 
         idiomasInputTitle[0].value = idiomasTitle[0].textContent
         idiomasInputTitle[0].style.display = "none";
+        idiomasButtonMas.style.display = "inline";
         // CORREGIR: guardar los cambios
     }
 })
@@ -345,6 +341,7 @@ idiomasButtonMas.addEventListener('click', () => {
         if (event.key === 'Enter') {
             idiomasInputTitle[1].value = idiomasTitle[1].textContent
             idiomasInputTitle[1].style.display = "none";
+            idiomasButtonMas.style.display = "inline";
             // CORREGIR: guardar los cambios
         }
     })
@@ -403,7 +400,8 @@ experienciaInputParagraph2[0].addEventListener('keyup', editarExperiencia);
 experienciaInputTitle[0].addEventListener("keyup", function (event) {
     if (event.key === 'Enter') {
 
-        experienciaInputTitle[0].value = experienciaTitle[0].textContent
+        experienciaInputTitle[0].value = experienciaTitle[0].textContent;
+        experienciaButtonMas.style.display = "inline";
         // CORREGIR: guardar los cambios
     }
 })
@@ -414,7 +412,8 @@ experienciaInputParagraph1[0].addEventListener("keyup", function (event) {
 
 
 
-        experienciaInputParagraph1[0].value = experienciaParagraph1[0].textContent
+        experienciaInputParagraph1[0].value = experienciaParagraph1[0].textContent;
+        experienciaButtonMas.style.display = "inline";
 
     }
 })
@@ -426,7 +425,8 @@ experienciaInputParagraph2[0].addEventListener("keyup", function (event) {
         experienciaInputParagraph2[0].style.display = "none";
         experienciaInputTitle[0].style.display = "none";
 
-        experienciaInputParagraph2[0].value = experienciaParagraph2[0].textContent
+        experienciaInputParagraph2[0].value = experienciaParagraph2[0].textContent;
+        experienciaButtonMas.style.display = "inline";
         // CORREGIR: guardar los cambios
     }
 })
@@ -463,7 +463,8 @@ experienciaButtonMas.addEventListener('click', () => {
     // funcion para fijar el texto al titulo
     experienciaInputTitle[1].addEventListener("keyup", function (event) {
         if (event.key === 'Enter') {
-            experienciaInputTitle[1].value = experienciaTitle[1].textContent
+            experienciaInputTitle[1].value = experienciaTitle[1].textContent;
+            experienciaButtonMas.style.display = "inline";
             // CORREGIR: guardar los cambios
         }
     })
@@ -473,7 +474,8 @@ experienciaButtonMas.addEventListener('click', () => {
         if (event.key === 'Enter') {
             experienciaInputParagraph1[1].style.display = "none";
             experienciaInputTitle[1].style.display = "none";
-            experienciaInputParagraph1[1].value = experienciaParagraph1[1].textContent
+            experienciaInputParagraph1[1].value = experienciaParagraph1[1].textContent;
+            experienciaButtonMas.style.display = "inline";
 
             // CORREGIR: guardar los cambios
         }
@@ -486,7 +488,8 @@ experienciaButtonMas.addEventListener('click', () => {
             experienciaInputParagraph1[1].style.display = "none";
             experienciaInputTitle[1].style.display = "none";
 
-            experienciaInputParagraph2[1].value = experienciaParagraph2[1].textContent
+            experienciaInputParagraph2[1].value = experienciaParagraph2[1].textContent;
+            experienciaButtonMas.style.display = "inline";
             // CORREGIR: guardar los cambios
         }
     })
@@ -534,7 +537,8 @@ experienciaButtonMas.addEventListener('click', () => {
         if (event.key === 'Enter') {
             experienciaInputParagraph1[2].style.display = "none";
             experienciaInputTitle[2].style.display = "none";
-            experienciaInputParagraph1[2].value = experienciaParagraph1[2].textContent
+            experienciaInputParagraph1[2].value = experienciaParagraph1[2].textContent;
+            experienciaButtonMas.style.display = "inline";
 
             // CORREGIR: guardar los cambios
         }
@@ -547,8 +551,42 @@ experienciaButtonMas.addEventListener('click', () => {
             experienciaInputParagraph1[2].style.display = "none";
             experienciaInputTitle[2].style.display = "none";
 
-            experienciaInputParagraph2[2].value = experienciaParagraph2[2].textContent
+            experienciaInputParagraph2[2].value = experienciaParagraph2[2].textContent;
+            experienciaButtonMas.style.display = "inline";
             // CORREGIR: guardar los cambios
         }
     })
 })
+
+
+
+//abrir menu hamburguesa
+
+const buttonHamburguesa = document.getElementById('buttonHamburguesa');
+const buttonHamburguesaCerrar = document.getElementById('buttonHamburguesaCerrar');
+const divHamburguesa = document.getElementById('divHamburguesa');
+const menuHamburguesaUl = document.getElementById('menuHamburguesaUl');
+
+const heroFilter = document.getElementById('heroFilter')
+const mainFilter = document.getElementById('mainFilter')
+const footerFilter = document.getElementById('footerFilter')
+
+
+const abrirMenu = () => {
+    divHamburguesa.style.display = "block";
+    buttonHamburguesa.style.display = "none";
+    heroFilter.classList.add('filter');
+    mainFilter.classList.add('filter');
+    footerFilter.classList.add('filter');
+}
+
+const cerrarMenu = () => {
+    divHamburguesa.style.display = "none";
+    buttonHamburguesa.style.display = "inline";
+    heroFilter.classList.remove('filter');
+    mainFilter.classList.remove('filter');
+    footerFilter.classList.remove('filter');
+}
+
+buttonHamburguesa.addEventListener('click', abrirMenu)
+buttonHamburguesaCerrar.addEventListener('click', cerrarMenu)

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manu Mancione</title>
     <!-- logo .ico -->
-    <link rel="shortcut icon" href="./images/logo2LilaP - copia.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo2LilaP.ico" type="image/x-icon">
     <!-- googleFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,11 +31,13 @@
                 <a href="./index.html"><img class="nav-logo" src="./images/logo2LilaP.png" alt="Logo Manuela"></a>
             </div>
             <div class="nav-container">
-                <div class="menuHamburguesa-div--icono">
-                    <i class="fa-solid fa-bars-staggered nav-icono"></i>
+                <div class="menuHamburguesa-div--icono ">
+                    <button id="buttonHamburguesa"><i class="fa-solid fa-bars-staggered nav-icono"></i></button>
                 </div>
-                <div class="menuHamburguesa-div">
-                    <i class="bi bi-x menuHamburguesa-div__icon"></i>
+                <div id="divHamburguesa" class="menuHamburguesa-div" style="display:none">
+                    <button id="buttonHamburguesaCerrar" class="menuHamburguesa-div__icon">
+                    <i class="bi bi-x "></i>
+                    </button>
                     <ul class="menuHamburguesa-div__list">
                         <li><a href="#seccionSobreMi">Sobre Mí</a></li>
                         <li><a href="#seccionEducacion">Educación</a></li>
@@ -43,7 +45,7 @@
                         <li><a href="#seccionProyectos">Proyectos</a></li>
                         <li><a href="#seccionContactos">Contacto</a></li>
                         <div class="buttom-container buttom-container--menuHamburguesa">
-                            <a class="buttom buttom--menuHamburguesa" href="#">Mi CV</a>
+                            <a class="buttom buttom--menuHamburguesa" href="./images/ManuelaMancione-CV.png" download>Mi CV</a>
                         </div>
                     </ul>
                 </div>
@@ -57,12 +59,12 @@
                     </ul>
                 </div>
                 <div class="buttom-container buttom-container--cv">
-                    <a class="buttom" href="./images/ManuelaMancione-CV" download>Mi CV</a>
+                    <a class="buttom" href="./images/ManuelaMancione-CV.png" download>Mi CV</a>
                 </div>
             </div>
         </nav>
 
-        <div class="hero">
+        <div class="hero" id="heroFilter">
             <div class="hero-img-div">
                 <img class="hero-img" src="./images/holaLila.png" alt="Hola!">
             </div>
@@ -70,9 +72,8 @@
                 <h1 class="hero-title">Soy Manu</h1>
             </div>
             <div class="hero-subtitle-div">
-                <h2 class="hero-subtitle">Desarrolladora Full-Stack Junior.</h2>
-                <p class="hero-paragraph">Soy una bioquímica convertida en desarrolladora. Me apasiona aprender cosas nuevas, la naturaleza y viajar.<br>
-Bienvenido a mi Portfolio web :)</p>
+                <h2 class="hero-subtitle">Junior Full-Stack Developer</h2>
+                <p class="hero-paragraph">Soy una desarrolladora de Rosario. Comencé a estudiar de manera autodidacta y por medio con cursos hace 1 año. Me apasiona aprender, la naturaleza y viajar.<br>Bienvenido a mi Portfolio web :)</p>
             </div>
             <div class="buttom-container">
                 <a class="buttom" href="#seccionSobreMi">Conoce más sobre mí</a>
@@ -81,7 +82,7 @@ Bienvenido a mi Portfolio web :)</p>
 
     </header>
 
-    <main>
+    <main id="mainFilter">
 
         <!-- SECCION SOBRE MI -->
 
@@ -98,10 +99,6 @@ Bienvenido a mi Portfolio web :)</p>
 
                 <button id="sobreMiButtonSave" class="editor-button"><i
                         class="fa-regular fa-floppy-disk editor-button__icono"></i></button>
-
-
-
-
 
                 <div id="sobreMiDiv" class="sobreMi-paragraph sobreMi-paragraph--editor">
                     <p class="sobreMiParagraph">
@@ -134,7 +131,7 @@ Bienvenido a mi Portfolio web :)</p>
                     </p> 
                     
                     <label for="sobreMiInput"></label>
-                    <textarea type="text" name="sobreMiInput" id="sobreMiInput"
+                    <textarea name="sobreMiInput" id="sobreMiInput"
                         style="display: none; width: 300px; min-height: 100px; margin: 0 auto 14px;"></textarea>
                 </div>
                 <div class="sobreMi-img">
@@ -155,18 +152,18 @@ Bienvenido a mi Portfolio web :)</p>
                     <h4 class="educacion-title">Formación Académica</h4>
                     <button id="academicaButton" class="editor-button"><i
                             class="fa-regular fa-pen-to-square editor-button__icono"></i></button>
-                    <button id="academicaButtonMas" class="editor-button"><i
+                    <button id="academicaButtonMas" style="display: none;" class="editor-button"><i
                             class="fa-regular fa-square-plus editor-button__icono"></i></button>
                     <button id="academicaButtonSave" class="editor-button"><i
                             class="fa-regular fa-floppy-disk editor-button__icono"></i></button>
                     <ul class="educacion-list">
                         <li id="academicaLi1" class="educacion-list__item">
-                            <textarea class="academicaInputTitle" type="text" name="" placeholder="título"
+                            <textarea class="academicaInputTitle" name="" placeholder="título"
                                 style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
-                            <textarea class="academicaInputParagraph" type="text" name=""
+                            <textarea class="academicaInputParagraph" name=""
                                 placeholder="lugar | período de años"
                                 style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
-                            <i style="display:none" class="itemIcono fa-solid fa-play" style="display:none"></i>
+                            <i class="itemIcono fa-solid fa-play" style="display:none"></i>
                             <h5 class="academicaTitle" style="display:none">
                                 <!-- Farmacéutica -->
                             </h5>
@@ -175,13 +172,13 @@ Bienvenido a mi Portfolio web :)</p>
                             </p>
                         </li>
                         <li id="educacionAcademicaLi2" class="educacion-list__item">
-                            <textarea class="academicaInputTitle" type="text" name="" placeholder="título"
+                            <textarea class="academicaInputTitle" name="" placeholder="título"
                                 style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
-                            <textarea class="academicaInputParagraph" type="text" name=""
+                            <textarea class="academicaInputParagraph" name=""
                                 placeholder="lugar | período de años"
                                 style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
-                            <i style="display:none" class="itemIcono fa-solid fa-play" style="display:none"></i>
-                            <h5 class="academicaTitle" style="display:none">
+                            <i style="display:none" class="itemIcono fa-solid fa-play" ></i>
+                            <h5 class="academicaTitle" >
                                 <!-- Bioquímica -->
                             </h5>
                             <p class="academicaParagraph" style="display:none">
@@ -195,18 +192,18 @@ Bienvenido a mi Portfolio web :)</p>
                     <h4 class="educacion-title">Cursos</h4>
                     <button id="cursosButton" class="editor-button"><i
                             class="fa-regular fa-pen-to-square editor-button__icono"></i></button>
-                    <button id="cursosButtonMas" class="editor-button"><i
+                    <button id="cursosButtonMas" style="display: none;" class="editor-button"><i
                             class="fa-regular fa-square-plus editor-button__icono"></i></button>
                     <button id="cursosButtonSave" class="editor-button"><i
                             class="fa-regular fa-floppy-disk editor-button__icono"></i></button>
                     <ul class="educacion-list">
                         <li id="cursosLi1" class="educacion-list__item">
-                            <textarea class="cursosInputTitle" type="text" name="" placeholder="título"
+                            <textarea class="cursosInputTitle"  name="" placeholder="título"
                                 style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
-                            <textarea class="cursosInputParagraph" type="text" name=""
+                            <textarea class="cursosInputParagraph"  name=""
                                 placeholder="lugar | período de años"
                                 style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
-                            <i style="display:none" class="itemIcono fa-solid fa-play" style="display:none"></i>
+                            <i style="display:none" class="itemIcono fa-solid fa-play"></i>
                             <h5 class="cursosTitle" style="display:none">
                                 <!-- Frontend React (Desarrollo Web, JavaScript, React
                                 JS) -->
@@ -216,13 +213,13 @@ Bienvenido a mi Portfolio web :)</p>
                             </p>
                         </li>
 
-                        <li id="cursosLi1" class="educacion-list__item">
-                            <textarea class="cursosInputTitle" type="text" name="" placeholder="título"
+                        <li id="cursosLi2" class="educacion-list__item">
+                            <textarea class="cursosInputTitle" name="" placeholder="título"
                                 style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
-                            <textarea class="cursosInputParagraph" type="text" name=""
+                            <textarea class="cursosInputParagraph" name=""
                                 placeholder="lugar | período de años"
                                 style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
-                            <i style="display:none" class="itemIcono fa-solid fa-play" style="display:none"></i>
+                            <i style="display:none" class="itemIcono fa-solid fa-play" ></i>
                             <h5 class="cursosTitle" style="display:none">
                                 <!-- Desarrollo Full-Stack Junior -->
                             </h5>
@@ -238,25 +235,25 @@ Bienvenido a mi Portfolio web :)</p>
                     <h4 class="educacion-title">Idiomas</h4>
                     <button id="idiomasButton" class="editor-button"><i
                             class="fa-regular fa-pen-to-square editor-button__icono"></i></button>
-                    <button id="idiomasButtonMas" class="editor-button"><i
+                    <button id="idiomasButtonMas" style="display: none;" class="editor-button"><i
                             class="fa-regular fa-square-plus editor-button__icono"></i></button>
                     <button id="idiomasButtonSave" class="editor-button"><i
                             class="fa-regular fa-floppy-disk editor-button__icono"></i></button>
 
                     <ul class="educacion-list">
                         <li id="idiomasLi1" class="educacion-list__item">
-                            <textarea class="idiomasInputTitle" type="text" name="" placeholder="título: nivel"
+                            <textarea class="idiomasInputTitle" name="" placeholder="título: nivel"
                                 style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
 
-                            <i style="display:none" class="itemIcono fa-solid fa-play" style="display:none"></i>
+                            <i style="display:none" class="itemIcono fa-solid fa-play"></i>
                             <h5 class="idiomasTitle" style="display:none">
                                 <!-- Inglés: intermedio. B2 FCE. -->
                             </h5>
                         </li>
-                        <li id="idiomasLi1" class="educacion-list__item">
-                            <textarea class="idiomasInputTitle" type="text" name="" placeholder="título: nivel"
+                        <li id="idiomasLi2" class="educacion-list__item">
+                            <textarea class="idiomasInputTitle"  name="" placeholder="título: nivel"
                                 style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
-                            <i style="display:none" class="itemIcono fa-solid fa-play" style="display:none"></i>
+                            <i style="display:none" class="itemIcono fa-solid fa-play"></i>
                             <h5 class="idiomasTitle" style="display:none">
                                 <!-- Italiano: básico. -->
                             </h5>
@@ -268,7 +265,7 @@ Bienvenido a mi Portfolio web :)</p>
                     <h4 class="educacion-title">Habilidades</h4>
                     <button class="editor-button"><i
                             class="fa-regular fa-pen-to-square editor-button__icono"></i></button>
-                    <button id="sobreMiButtonSave" class="editor-button"><i
+                    <button id="educacionButtonSave" class="editor-button"><i
                             class="fa-regular fa-floppy-disk editor-button__icono"></i></button>
 
                     <ul class="educacion-list">
@@ -299,25 +296,25 @@ Bienvenido a mi Portfolio web :)</p>
             <div class="experiencia">
                 <button id="experienciaButton" class="editor-button"><i
                         class="fa-regular fa-pen-to-square editor-button__icono"></i></button>
-                <button id="experienciaButtonMas" class="editor-button"><i
+                <button id="experienciaButtonMas" style="display: none;" class="editor-button"><i
                         class="fa-regular fa-square-plus editor-button__icono"></i></button>
                 <button id="experienciaButtonSave" class="editor-button"><i
                         class="fa-regular fa-floppy-disk editor-button__icono"></i></button>
                 <div>
-                    <textarea class="experienciaInputTitle" type="text" name="" placeholder="cargo"
+                    <textarea class="experienciaInputTitle"  name="" placeholder="cargo"
                         style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
                     <i style="display:none" class="itemIcono fa-solid fa-play"></i>
                     <h4 class="experiencia-title  experienciaTitle" style="display:none">
 
                         <!-- Bioquímica -->
                     </h4>
-                    <textarea class="experienciaInputParagraph1" type="text" name="" placeholder="lugar, fechas"
+                    <textarea class="experienciaInputParagraph1" name="" placeholder="lugar, fechas"
                         style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
 
                     <p class="experienciaParagraph1" style="display:none">
                         <!-- CEMAR, Marzo 2019 - Presente -->
                     </p>
-                    <textarea class="experienciaInputParagraph2" type="text" name="" placeholder="descripción"
+                    <textarea class="experienciaInputParagraph2" name="" placeholder="descripción"
                         style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
 
                     <p class="experienciaParagraph2" style="display:none">
@@ -326,19 +323,19 @@ Bienvenido a mi Portfolio web :)</p>
                 </div>
 
                 <div>
-                    <textarea class="experienciaInputTitle" type="text" name="" placeholder="cargo"
+                    <textarea class="experienciaInputTitle"  name="" placeholder="cargo"
                         style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
                     <i style="display:none" class="itemIcono fa-solid fa-play"></i>
                     <h4 class="experiencia-title  experienciaTitle" style="display:none">
                         <!-- Bioquímica -->
                     </h4>
-                    <textarea class="experienciaInputParagraph1" type="text" name="" placeholder="lugar, fechas"
+                    <textarea class="experienciaInputParagraph1"  name="" placeholder="lugar, fechas"
                         style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
 
                     <p class="experienciaParagraph1" style="display:none">
                         <!-- CEMAR, Octubre 2015 - Marzo 2019 -->
                     </p>
-                    <textarea class="experienciaInputParagraph2" type="text" name="" placeholder="descripción"
+                    <textarea class="experienciaInputParagraph2"  name="" placeholder="descripción"
                         style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
 
                     <p class="experienciaParagraph2" style="display:none">
@@ -347,19 +344,19 @@ Bienvenido a mi Portfolio web :)</p>
                 </div>
 
                 <div>
-                    <textarea class="experienciaInputTitle" type="text" name="" placeholder="cargo"
+                    <textarea class="experienciaInputTitle"  name="" placeholder="cargo"
                         style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
                     <i style="display:none" class="itemIcono fa-solid fa-play"></i>
                     <h4 class="experiencia-title  experienciaTitle" style="display:none">
                         <!-- Bioquímica de guardia -->
                     </h4>
-                    <textarea class="experienciaInputParagraph1" type="text" name="" placeholder="lugar, fechas"
+                    <textarea class="experienciaInputParagraph1"  name="" placeholder="lugar, fechas"
                         style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
 
                     <p class="experienciaParagraph1" style="display:none">
                         <!-- Octubre 2015 - Mayo 2018 -->
                     </p>
-                    <textarea class="experienciaInputParagraph2" type="text" name="" placeholder="descripción"
+                    <textarea class="experienciaInputParagraph2"  name="" placeholder="descripción"
                         style="display:none; width: 300px; min-height: 30px; margin-left: auto; margin-right: auto;"></textarea>
 
                     <p class="experienciaParagraph2" style="display:none">
@@ -440,16 +437,14 @@ Bienvenido a mi Portfolio web :)</p>
                 <hr>
             </div>
             <div class="contacto-div">
-                <button class="editor-button"><i class="fa-regular fa-pen-to-square editor-button__icono"></i></button>
-                <button id="sobreMiButtonSave" class="editor-button"><i
-                        class="fa-regular fa-floppy-disk editor-button__icono"></i></button>
+                
                 <h4 class="section-subtitle">Ponete en contacto conmigo</h4>
                 <p>Actualmente estoy buscando nuevas oportunidades, mi bandeja de entrada siempre está abierta.<br>Ya
                     sea que tengas una pregunta o simplemente quieras saludar, ¡voy a hacer todo lo posible para
                     responderte!</p>
             </div>
             <div class="buttom-container">
-                <a class="buttom" href="#">Contactame</a>
+                <a class="buttom" href="mailto:manuela.manione@gmail.com">Contactame</a>
             </div>
         </section>
 
@@ -468,7 +463,7 @@ Bienvenido a mi Portfolio web :)</p>
         </div>
     </main>
 
-    <footer>
+    <footer id="footerFilter">
         <h5 class="footer-title">Diseñado & Desarrollado por Manuela Mancione</h5>
         <i class="fa-regular fa-heart footer-iconos"></i>
         <i class="fa-solid fa-bicycle footer-iconos"></i>
