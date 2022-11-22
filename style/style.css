@@ -101,7 +101,7 @@ nav {
     width: 100%;
     height: 5rem;
     margin: 0;
-    background-color: hsla(234, 27%, 29%, 0.98);
+    background-color: #363a5d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,9 +109,21 @@ nav {
 }
 
 .nav-icono {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #E7D9EA;
+    background-color: #363a5d;
     padding: 15px;
+}
+
+#buttonHamburguesa {
+    border: none;
+    padding: 0;
+}
+
+#buttonHamburguesaCerrar {
+    border: none;
+    padding: 0;
+    background-color: #414679;
 }
 
 .menuStandar-div__list {
@@ -147,13 +159,16 @@ nav {
     padding: 0 15px;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 985px) {
     .menuHamburguesa-div {
         display: none;
     }
 
     .menuHamburguesa-div--icono {
         display: none;
+        padding: 0;
+        border: none;
+        background: #363a5d;
     }
 
     .nav-container {
@@ -165,36 +180,33 @@ nav {
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 985px) {
 
     .menuStandar-div,
     .buttom-container--cv {
         display: none
     }
 
-    .menuHamburguesa-div {
-        background-color: #414679;
-        box-shadow: 0.5px 0.5px 5px #262942a2;
-        position: absolute;
-        width: 75%;
-        height: 100vh;
-        top: 0;
-        right: 0;
-        z-index: 10000;
-        display: none;
 
-        /* CORREGIR!! activar con JS el menu hamburguesa y agregar:
-         al hero, main y footer filter */
-    }
-
-    /* .hero,
-    main,
-    footer {
-        filter: blur(2px) brightness(60%);
-    } */
 }
 
+.menuHamburguesa-div {
+    background-color: #414679;
+    box-shadow: 0.5px 0.5px 5px #262942a2;
+    position: absolute;
+    width: 75%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    /* display: none; */
+    /* CORREGIR!! activar con JS el menu hamburguesa y agregar:
+         al hero, main y footer filter */
+}
 
+.filter {
+    filter: blur(2px) brightness(50%);
+}
 
 @media screen and (min-width: 500px) {
     .menuHamburguesa-div {
@@ -282,8 +294,8 @@ nav {
 
 .hero-subtitle {
     color: #363a5d;
-    padding: 6px;
-    font-size: 1.2rem;
+    padding: 5px 15px;
+    font-size: 1.15rem;
     text-align: left;
     background-color: #CCD6F6;
     border-radius: 3px;
@@ -295,6 +307,7 @@ nav {
 
 .hero-paragraph {
     margin: 1rem 0;
+    font-size: 1.1rem;
     line-height: 1.6;
     padding: 0 1rem 1rem;
 }
@@ -395,7 +408,7 @@ hr {
 .sobreMi-img {
     text-align: center;
     background-image: linear-gradient(rgba(10, 61, 95, 0.3), rgba(10, 61, 95, 0.3)),
-        url(./images/fotoPerfil.jpg);
+        url(../images/fotoPerfil.jpg);
     min-width: 320px;
     max-width: 350px;
     height: 350px;
@@ -405,7 +418,7 @@ hr {
 }
 
 .sobreMi-img:hover {
-    background-image: url(./images/fotoPerfil.jpg);
+    background-image: url(../images/fotoPerfil.jpg);
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
 }
@@ -439,16 +452,27 @@ hr {
     margin: 0;
 }
 
-.educacion-list i {
+.educacion-list__item i {
     padding: 0 7px 0 2px;
     font-size: 0.45rem;
     color: #16C79A;
 }
 
-.educacion-list li {
+.educacion-list__item {
     list-style: none;
     padding: 10px 5px;
-    line-height: 1.5;
+    line-height: 1.3;
+}
+
+.educacion-list__item h5 {
+    font-size: 1rem;
+    display: inline;
+    padding: 1rem 0.5rem;
+
+}
+
+.educacion-list__item p {
+    margin: 0px;
 }
 
 progress {
@@ -473,7 +497,7 @@ progress[value]::-webkit-progress-value {
 
 @media screen and (min-width: 600px) {
     .educacion-div-line {
-        border-left: 1px solid #11698E;
+        border-left: 1px solid #4a5096;
         padding-left: 4rem;
     }
 }
@@ -490,7 +514,7 @@ progress[value]::-webkit-progress-value {
     padding: 0 2rem;
 }
 
-.experiencia-title i {
+.itemIcono {
     padding: 0 7px 0 2px;
     font-size: 0.45rem;
     color: #16C79A;
@@ -526,23 +550,23 @@ progress[value]::-webkit-progress-value {
 
 .proyectos-imagen-div--1 {
     background-image: linear-gradient(rgba(10, 61, 95, 0.4), rgba(10, 61, 95, 0.4)),
-        url(./images/proyecto1.png);
+        url(./../images/proyecto1.png);
 }
 
 .proyectos-imagen-div--1:hover {
-    background-image: url(./images/proyecto1.png);
+    background-image: url(./../images/proyecto1.png);
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
 }
 
 .proyectos-imagen-div--2 {
     background-image: linear-gradient(rgba(10, 61, 95, 0.4), rgba(10, 61, 95, 0.4)),
-        url(./images/proyecto2.png);
+        url(./../images/proyecto2.png);
     transition: 0.3s ease-in-out;
 }
 
 .proyectos-imagen-div--2:hover {
-    background-image: url(./images/proyecto2.png);
+    background-image: url(./../images/proyecto2.png);
     transform: scale(1.02);
 }
 
@@ -608,12 +632,12 @@ progress[value]::-webkit-progress-value {
         position: relative;
         height: 60vh;
     }
-    
-    
-    .proyectos-container--2{
-        margin-top: 10rem;
+
+
+    .proyectos-container--2 {
+        margin-top: 8rem;
     }
-    
+
     .proyectos-paragraph-div--1 {
         left: 0;
         top: 5.5rem;
@@ -753,7 +777,7 @@ progress[value]::-webkit-progress-value {
 /* footer */
 
 footer {
-    margin: 8rem 0 2rem;
+    margin: 8rem 0 1.2rem;
     text-align: center;
     color: #8892B0;
 }
@@ -772,3 +796,31 @@ footer {
 
 /* CORREGIR: hacer que baje despacio a las secciones */
 /* CORREGIR: hacer que descargue el CV en un archivo */
+
+/* elmentos para editar la informacion */
+.editor-button {
+    background-color: #363a5d;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.editor-button__icono {
+    color: rgb(255, 115, 0);
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+
+}
+
+.editor-button__icono:hover {
+    transform: scale(1.3);
+    transition: 0.2s ease-in-out;
+}
+
+.sobreMi-paragraph--editor {
+    text-align: center;
+    margin: 0 auto;
+}
