@@ -1,6 +1,8 @@
 // Para cambiar texto en la SECCION SOBRE MI
 
 const sobreMiInput = document.getElementById("sobreMiInput");
+
+
 const sobreMiButton = document.getElementById("sobreMiButton");
 const sobreMiParagraph = document.getElementsByClassName("sobreMiParagraph");
 const sobreMiButtonMas = document.getElementById("sobreMiButtonMas");
@@ -9,9 +11,13 @@ let i = 0
 
 
 const cambiarTextoSobreMi = () => {
-    sobreMiInput.style.display = "block";
-    sobreMiParagraph[i].textContent = sobreMiInput.value;
-    console.log(i)
+    if (i < 4) {
+        sobreMiInput.style.display = "block";
+        sobreMiParagraph[i].textContent = sobreMiInput.value;
+        console.log('i =' + i)
+    } else {
+        sobreMiInput.style.display = "none";
+    }
 }
 
 sobreMiInput.addEventListener("keyup", function (event) {
@@ -20,12 +26,8 @@ sobreMiInput.addEventListener("keyup", function (event) {
             sobreMiInput.style.display = "none";
             sobreMiInput.value = sobreMiParagraph[i].textContent
             i++
-            console.log(i)
             sobreMiInput.value = ''
         }
-    } else {
-        sobreMiInput.style.display = "none";
-        alert("no se puede agregar mas párrafos");
     }
 });
 
@@ -48,14 +50,35 @@ const academicaTitle = document.getElementsByClassName('academicaTitle')
 const academicaParagraph = document.getElementsByClassName('academicaParagraph')
 const itemIcono = document.getElementsByClassName('itemIcono')
 const academicaButtonMas = document.getElementById('academicaButtonMas')
-const academicaButtonSave = document.getElementById('academicaButtonSave')
 
-// class ItemFormacionAcademica {
-//     constructor(titulo, descripcion) {
+
+
+
+
+// //con clases y objetos
+// class Educacion {
+//     constructor(titulo, institucion, fecha) {
 //         this.titulo = titulo;
+//         this.institucion = institucion;
+//         this.fecha = fecha;
+//     }
+// }
+
+// const formacionAcademica = new Educacion(titulo, institucion, fecha)
+// const cursos = new Educacion(titulo, institucion, fecha)
+// const idiomas = new Educacion(titulo, institucion, fecha)
+
+
+// class Experiencia {
+//     constructor(cargo, institucion, fecha, descripcion) {
+//         this.cargo = cargo;
+//         this.institucion = institucion;
+//         this.fecha = fecha;
 //         this.descripcion = descripcion;
 //     }
 // }
+
+// const trabajo = new Experiencia(cargo, institucion, fecha, descripcion)
 
 
 
@@ -87,7 +110,6 @@ academicaInputTitle[0].addEventListener("keyup", function (event) {
 
         academicaInputTitle[0].value = academicaTitle[0].textContent
         academicaButtonMas.style.display = "inline";
-        // CORREGIR: guardar los cambios
     }
 })
 
@@ -97,7 +119,6 @@ academicaInputParagraph[0].addEventListener("keyup", function (event) {
         academicaInputParagraph[0].style.display = "none";
         academicaInputTitle[0].style.display = "none";
         academicaInputParagraph[0].value = academicaParagraph[0].textContent
-        // CORREGIR: guardar los cambios
     }
 })
 
@@ -132,7 +153,6 @@ academicaButtonMas.addEventListener('click', () => {
         if (event.key === 'Enter') {
             academicaInputTitle[1].value = academicaTitle[1].textContent
             academicaButtonMas.style.display = "inline";
-            // CORREGIR: guardar los cambios
         }
     })
 
@@ -143,7 +163,6 @@ academicaButtonMas.addEventListener('click', () => {
             academicaInputTitle[1].style.display = "none";
             academicaInputParagraph[1].value = academicaParagraph[1].textContent
             academicaButtonMas.style.display = "inline";
-            // CORREGIR: guardar los cambios
         }
     })
 })
@@ -197,7 +216,6 @@ cursosInputTitle[0].addEventListener("keyup", function (event) {
 
         cursosInputTitle[0].value = cursosTitle[0].textContent
         cursosButtonMas.style.display = "inline";
-        // CORREGIR: guardar los cambios
     }
 })
 
@@ -208,7 +226,6 @@ cursosInputParagraph[0].addEventListener("keyup", function (event) {
         cursosInputTitle[0].style.display = "none";
         cursosInputParagraph[0].value = cursosParagraph[0].textContent
         cursosButtonMas.style.display = "inline";
-        // CORREGIR: guardar los cambios
     }
 })
 
@@ -243,7 +260,6 @@ cursosButtonMas.addEventListener('click', () => {
         if (event.key === 'Enter') {
             cursosInputTitle[1].value = cursosTitle[1].textContent
             cursosButtonMas.style.display = "inline";
-            // CORREGIR: guardar los cambios
         }
     })
 
@@ -254,7 +270,6 @@ cursosButtonMas.addEventListener('click', () => {
             cursosInputTitle[1].style.display = "none";
             cursosInputParagraph[1].value = cursosParagraph[1].textContent;
             cursosButtonMas.style.display = "inline";
-            // CORREGIR: guardar los cambios
         }
     })
 })
@@ -308,7 +323,6 @@ idiomasInputTitle[0].addEventListener("keyup", function (event) {
         idiomasInputTitle[0].value = idiomasTitle[0].textContent
         idiomasInputTitle[0].style.display = "none";
         idiomasButtonMas.style.display = "inline";
-        // CORREGIR: guardar los cambios
     }
 })
 
@@ -342,7 +356,6 @@ idiomasButtonMas.addEventListener('click', () => {
             idiomasInputTitle[1].value = idiomasTitle[1].textContent
             idiomasInputTitle[1].style.display = "none";
             idiomasButtonMas.style.display = "inline";
-            // CORREGIR: guardar los cambios
         }
     })
 
@@ -402,7 +415,6 @@ experienciaInputTitle[0].addEventListener("keyup", function (event) {
 
         experienciaInputTitle[0].value = experienciaTitle[0].textContent;
         experienciaButtonMas.style.display = "inline";
-        // CORREGIR: guardar los cambios
     }
 })
 
@@ -427,7 +439,6 @@ experienciaInputParagraph2[0].addEventListener("keyup", function (event) {
 
         experienciaInputParagraph2[0].value = experienciaParagraph2[0].textContent;
         experienciaButtonMas.style.display = "inline";
-        // CORREGIR: guardar los cambios
     }
 })
 
@@ -465,7 +476,6 @@ experienciaButtonMas.addEventListener('click', () => {
         if (event.key === 'Enter') {
             experienciaInputTitle[1].value = experienciaTitle[1].textContent;
             experienciaButtonMas.style.display = "inline";
-            // CORREGIR: guardar los cambios
         }
     })
 
@@ -477,7 +487,6 @@ experienciaButtonMas.addEventListener('click', () => {
             experienciaInputParagraph1[1].value = experienciaParagraph1[1].textContent;
             experienciaButtonMas.style.display = "inline";
 
-            // CORREGIR: guardar los cambios
         }
     })
     // funcion para fijar el texto al parrafo2
@@ -490,7 +499,6 @@ experienciaButtonMas.addEventListener('click', () => {
 
             experienciaInputParagraph2[1].value = experienciaParagraph2[1].textContent;
             experienciaButtonMas.style.display = "inline";
-            // CORREGIR: guardar los cambios
         }
     })
 })
@@ -528,7 +536,6 @@ experienciaButtonMas.addEventListener('click', () => {
     experienciaInputTitle[2].addEventListener("keyup", function (event) {
         if (event.key === 'Enter') {
             experienciaInputTitle[2].value = experienciaTitle[2].textContent
-            // CORREGIR: guardar los cambios
         }
     })
 
@@ -540,7 +547,6 @@ experienciaButtonMas.addEventListener('click', () => {
             experienciaInputParagraph1[2].value = experienciaParagraph1[2].textContent;
             experienciaButtonMas.style.display = "inline";
 
-            // CORREGIR: guardar los cambios
         }
     })
     // funcion para fijar el texto al parrafo2
@@ -553,7 +559,6 @@ experienciaButtonMas.addEventListener('click', () => {
 
             experienciaInputParagraph2[2].value = experienciaParagraph2[2].textContent;
             experienciaButtonMas.style.display = "inline";
-            // CORREGIR: guardar los cambios
         }
     })
 })
