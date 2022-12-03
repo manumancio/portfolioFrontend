@@ -1,0 +1,30 @@
+<!-- SECCION EXPERIENCIA -->
+
+        <section id="seccionExperiencia mainFilter" class="main" data-aos="fade-up">
+            <div class="section-title-container">
+                <h3 class="section-title">Experiencia</h3>
+                <hr>
+            </div>
+            <div class="experiencia">
+                <div *ngFor="let experiencia of experienceList">
+                    <h4 class="experiencia-title"><i class="fa-solid fa-play itemIcono"></i>{{experiencia.position}}</h4>
+                    <p>{{experiencia.companyDuration}}</p>
+                    <p>{{experiencia.description}}</p>
+                </div>
+<!-- 
+                <div>
+                    <h4 class="experiencia-title"><i class="fa-solid fa-play itemIcono"></i>Bioquímica</h4>
+                    <p>CEMAR, Octubre 2015 - Marzo 2019</p>
+                    <p>Jefe de sector en el área Pre y Post Analítica.</p>
+                </div>
+
+                <div>
+                    <h4 class="experiencia-title"><i class="fa-solid fa-play itemIcono"></i>Bioquímica de guardia</h4>
+                    <p>Octubre 2015 - Mayo 2018</p>
+                    <p>En PAMI 1, Sanatorio Parque, Instituto Cardiovascular de Rosario, Laboratorio del Centro de
+                        Especialidades Médicas Ambulatorias de la Municipalidad de Rosario (CEMAR), Hospital de
+                        Emergencias
+                        Dr. Clemente Álvarez, Hospital Intendente Gabriel Carrasco.</p>
+                </div> -->
+            </div>
+        </section>

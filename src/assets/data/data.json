@@ -1,0 +1,94 @@
+{
+  "name": "Manuela Mancione",
+
+  "subtitleHero": "Junior Full-Stack Developer",
+  "paragraphHero1": "Soy una desarrolladora de Rosario. Comencé a estudiar de manera autodidacta y por medio con cursos hace 1 año. Me apasiona aprender, la naturaleza y viajar.",
+  "paragraphHero2": "Bienvenido a mi Portfolio web :)",
+
+  "aboutParagraph1": "Hola! mi nombre es Manuela Mancione, soy bioquímica y farmacéutica, y actualmente formándome como desarrolladora Full-Stack.",
+  "aboutParagraph2": "Luego de trabajar durante 7 años en el sector salud, decidí darle un giro a mi campo de estudio, y adentrarme en el mundo de la IT, en búsqueda de nuevos desafíos, mejores oportunidades y trabajo remoto.",
+  "aboutParagraph3": "Este año realicé cursos sobre Desarrollo web y JavaScript; actualmente me encuentro realizando el curso de la segunda etapa de Argentina Programa 4.0. Tengo como objetivo a corto plazo, poner en práctica lo aprendido y realizar un curso de React JS, con el fín de hacer más completo mi perfil Frontend y adquirir mi primer experiencia laboral.",
+  "aboutParagraph4": "Soy una persona proactiva y perseverante, me gusta aprender cosas nuevas, soy autodidacta, tiendo a la organización e intento siempre lograr una buena gestión del tiempo.",
+  "profileImage": "",
+
+  "educationAcademica": [{
+      "title": "Farmacéutica",
+      "universityDuration": "Universidad Nacional de Rosario | 2019 - 2021."
+
+    },
+    {
+      "title": "Bioquímica",
+      "universityDuration": "Universidad Nacional de Rosario | 2007 - 2015."
+    }
+  ],
+  "educationCursos": [{
+      "title": "Frontend React (Desarrollo Web, JavaScript, React JS)",
+      "schoolDuration": "CoderHouse | 2022 - En curso."      
+    },
+    {
+      "title": "Desarrollo Full-Stack Junior",
+      "schoolDuration": "Argentina Programa (#SéProgramar, #YoProgramo) | 2022 - En curso."
+    }
+  ],
+  "educationIdiomas": [{
+      "languageLevel": "Inglés. Nivel intermedio. B2 FCE."      
+    },
+    {
+      "languageLevel": "Italiano. Nivel básico."
+    }
+  ],
+  "skills": [{
+      "name": "HTML",
+      "progress": 70
+    },
+    {
+      "name": "CSS",
+      "progress": 60
+    },
+    {
+      "name": "Bootstrap",
+      "progress": 50
+    },
+    {
+      "name": "SASS",
+      "progress": 50
+    },
+    {
+      "name": "JavaScript",
+      "progress": 40
+    },
+    {
+      "name": "TypeScript",
+      "progress": 20
+    },
+    {
+      "name": "React JS",
+      "progress": 20
+    },
+    {
+      "name": "Angular",
+      "progress": 20
+    },
+    {
+      "name": "Github",
+      "progress": "70"
+    }
+  ],
+
+  "experience": [{
+      "position": "Bioquímica",
+      "companyDuration": "CEMAR. Marzo 2019 - Presente.",      
+      "description": "Jefe de sector en el área Microbiología."
+    },
+    {
+      "position": "Bioquímica",
+      "companyDuration": "CEMAR. Octubre 2015 - Marzo 2019.",      
+      "description": "Jefe de sector en el área Pre y Post Analítica."
+    },
+    {
+      "position": "Bioquímica de guardia",
+      "companyDuration": "Octubre 2015 - Mayo 2018.",
+      "description": "En PAMI 1, Sanatorio Parque, Instituto Cardiovascular de Rosario, Laboratorio del Centro de Especialidades Médicas Ambulatorias de la Municipalidad de Rosario (CEMAR), Hospital de Emergencias Dr. Clemente Álvarez, Hospital Intendente Gabriel Carrasco."
+    }
+  ]  
+}

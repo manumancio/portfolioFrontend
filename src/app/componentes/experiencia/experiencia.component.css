@@ -1,0 +1,16 @@
+/* SECCION experiencia */
+
+.experiencia div {
+  margin: 2.5rem 0 0.5rem
+}
+
+.experiencia-title {
+  color: #8892B0;
+  padding: 0 2rem;
+}
+
+.itemIcono {
+  padding: 0 7px 0 2px;
+  font-size: 0.45rem;
+  color: #16C79A;
+}

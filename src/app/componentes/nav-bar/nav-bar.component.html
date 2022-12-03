@@ -1,0 +1,62 @@
+
+         <header>
+        <nav>
+            <div class="logo">
+                <a href="./index.html"><img class="nav-logo" src="../../../assets/images/logo2LilaP.png" alt="Logo Manuela"></a>
+            </div>
+            <div class="nav-container">
+                <div class="menuHamburguesa-div--icono ">
+                    <button id="buttonHamburguesa"><i class="fa-solid fa-bars-staggered nav-icono"></i></button>
+                </div>
+                <div id="divHamburguesa" class="menuHamburguesa-div" style="display:none">
+                    <button id="buttonHamburguesaCerrar" class="menuHamburguesa-div__icon">
+                        <i class="bi bi-x "></i>
+                    </button>
+                    <ul class="menuHamburguesa-div__list">
+                        <li><a href="#seccionSobreMi">Sobre Mí</a></li>
+                        <li><a href="#seccionEducacion">Educación</a></li>
+                        <li><a href="#seccionExperiencia">Experiencia</a></li>
+                        <li><a href="#seccionProyectos">Proyectos</a></li>
+                        <li><a href="#seccionContactos">Contacto</a></li>
+                        <li><a href="#seccionContactos">Iniciar seción</a></li>
+                        <div class="buttom-container buttom-container--menuHamburguesa">
+                            <a class="buttom buttom--menuHamburguesa" href="./images/ManuelaMancione-CV.png" download>Mi
+                                CV</a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="menuStandar-div">
+                    <ul class="menuStandar-div__list">
+                        <li><a href="#seccionSobreMi">Sobre Mí</a></li>
+                        <li><a href="#seccionEducacion">Educación</a></li>
+                        <li><a href="#seccionExperiencia">Experiencia</a></li>
+                        <li><a href="#seccionProyectos">Proyectos</a></li>
+                        <li><a href="#seccionContactos">Contacto</a></li>
+                        <li><button class="user-button"><i class="bi bi-person user-icon"></i></button></li>
+                    </ul>
+                </div>
+                <div class="buttom-container buttom-container--cv">
+                    <a class="buttom" href="../../../assets/images/ManuelaMancione-CV.png" download>Mi CV</a>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="hero" id="heroFilter">
+            <div class="hero-img-div">
+                <img class="hero-img" src="../../../assets/images/holaLila.png" alt="Hola!">
+            </div>
+            <div class="hero-title-div">
+                <h1 class="hero-title">Soy Manu</h1>
+            </div>
+            <div class="hero-subtitle-div">
+                <h2 class="hero-subtitle">{{miPortfolio.subtitleHero}}</h2>
+                <p class="hero-paragraph" style="padding-bottom: 0;">{{miPortfolio.paragraphHero1}}</p>
+                <p class="hero-paragraph" style="padding-top: 0;">{{miPortfolio.paragraphHero2}}</p>  
+            </div>
+            <div class="buttom-container">
+                <a class="buttom" href="#seccionSobreMi">Conoce más sobre mí</a>
+            </div>
+        </div>
+
+    </header>

@@ -1,0 +1,185 @@
+/* SECCION proyectos */
+
+.proyectos-container {
+  margin: 2rem 0;
+}
+
+.proyectos-title-div h5 {
+  color: #16C79A;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.proyectos-title-div h4 {
+  color: #E7D9EA;
+  line-height: 1.5;
+  margin-top: 0.7rem;
+}
+
+.proyectos-imagen-div {
+  width: 90%;
+  min-height: 300px;
+  background-size: cover;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.proyectos-imagen-div--1 {
+  background-image: linear-gradient(rgba(10, 61, 95, 0.4), rgba(10, 61, 95, 0.4)),
+    url(../../../assets/images/proyecto1.png);
+}
+
+.proyectos-imagen-div--1:hover {
+  background-image: url(../../../assets/images/proyecto1.png);
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
+
+.proyectos-imagen-div--2 {
+  background-image: linear-gradient(rgba(10, 61, 95, 0.4), rgba(10, 61, 95, 0.4)),
+    url(../../../assets/images/proyecto2.png);
+  transition: 0.3s ease-in-out;
+}
+
+.proyectos-imagen-div--2:hover {
+  background-image: url(../../../assets/images/proyecto2.png);
+  transform: scale(1.02);
+}
+
+.proyectos-paragraph-div {
+  width: 90%;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: #414679;
+  box-shadow: 0.5px 0.5px 5px #262942a2;
+  margin: 0 auto;
+}
+
+.proyectos-paragraph-div p {
+  color: rgba(255, 255, 255, 0.932);
+}
+
+.proyectos-skills-div h5 {
+  word-spacing: 1rem;
+  color: #E7D9EA;
+  background-color: #5a60749c;
+  padding: 5px 10px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px #4146558a;
+  font-weight: 700;
+  z-index: 10000;
+}
+
+.proyectos-icons-div i {
+  font-size: 1.5rem;
+  color: #E7D9EA;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.proyectos-icons-div i:hover {
+  color: #16C79A;
+}
+
+.proyectos-icons-div a:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  .proyectos-skills-div h5 {
+    background-color: inherit;
+    color: #E7D9EA;
+    box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .proyectos-paragraph-div {
+    width: 40%;
+    position: absolute;
+    display: block;
+  }
+
+  .proyectos-container {
+    margin: 2rem;
+  }
+
+  .proyectos-container--1 {
+    position: relative;
+    height: 60vh;
+  }
+
+
+  .proyectos-container--2 {
+    margin-top: 8rem;
+  }
+
+  .proyectos-paragraph-div--1 {
+    left: 0;
+    top: 5.5rem;
+    width: 25vw;
+    height: 200px;
+    z-index: 1000;
+  }
+
+  .proyectos-imagen-div--1 {
+    width: 45vw;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 5rem;
+  }
+
+  .proyectos-skills-div--1 {
+    position: absolute;
+    left: 0;
+    top: 20rem;
+  }
+
+  .proyectos-icons-div--1 {
+    position: absolute;
+    left: 0;
+    top: 24rem;
+  }
+
+  .proyectos-container--2 {
+    position: relative;
+    height: 60vh;
+  }
+
+  .proyectos-paragraph-div--2 {
+    right: 0;
+    top: 5.5rem;
+    width: 25vw;
+    height: 200px;
+    z-index: 1000;
+  }
+
+  .proyectos-imagen-div--2 {
+    width: 45vw;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+  }
+
+  .proyectos-skills-div--2 {
+    position: absolute;
+    right: 0;
+    top: 20rem;
+  }
+
+  .proyectos-icons-div--2 {
+    position: absolute;
+    right: 0;
+    top: 24rem;
+  }
+}
+
+
+/* SECCION contacto */
+
+.contacto-div {
+  text-align: center;
+}

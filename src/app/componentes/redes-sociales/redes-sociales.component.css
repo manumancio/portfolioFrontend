@@ -1,0 +1,64 @@
+/* SECCION redes sociales */
+
+.redesSociales {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.redesSociales-icon {
+  color: #16C79A;
+  font-size: 1.3rem;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.redesSociales a:hover {
+  transform: translateY(-5px);
+}
+
+.redesSociales-icon:hover {
+  color: #E7D9EA;
+}
+
+.redesSociales a {
+  text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+  .redesSociales {
+    position: fixed;
+    left: 0.88rem;
+    bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0.2rem;
+  }
+
+  .redesSociales a {
+    margin: 0.5rem;
+
+  }
+
+  .hr-seccionFinal--icon {
+    transform: rotate(90deg);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 6.2rem;
+    margin: auto auto;
+    border-top: 1px solid #16C79A;
+
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+  .redesSociales {
+    margin: 2rem;
+
+  }
+
+  .hr-seccionFinal--icon {
+    width: 10rem;
+  }
+}

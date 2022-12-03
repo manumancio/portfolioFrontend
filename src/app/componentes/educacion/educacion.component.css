@@ -1,0 +1,67 @@
+/* SECCION educacion */
+
+.educacion-title {
+  color: #8892B0;
+  margin: 20px 0 0px;
+}
+
+.educacion-list {
+  color: #CCD6F6;
+  padding: 10px;
+  margin: 0;
+}
+
+.educacion-list li {
+  list-style: none;
+  padding: 15px;
+}
+
+.educacion-list i {
+  padding: 0 7px 0 2px;
+  font-size: 0.45rem;
+  color: #16C79A;
+}
+
+.educacion-list__item {
+  list-style: none;
+  padding: 10px 5px;
+  line-height: 1.3;
+}
+
+.educacion-list__item h5 {
+  font-size: 1rem;
+  display: inline;
+  padding: 1rem 0.5rem;
+
+}
+
+.educacion-list__item p {
+  margin: 0px;
+}
+
+progress {
+  margin: 0 15px;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #e7d9eaa1;
+  border-radius: 3px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #16c79ba1;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 600px) {
+  .educacion-div-line {
+    border-left: 1px solid #4a5096;
+    padding-left: 4rem;
+  }
+}

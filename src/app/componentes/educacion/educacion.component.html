@@ -1,0 +1,64 @@
+<!-- SECCION EDUCACION -->
+
+<section id="seccionEducacion mainFilter" class="educacion main" data-aos="fade-up">
+  <div class="section-title-container">
+    <h3 class="section-title">Educación</h3>
+    <hr>
+  </div>
+  <div class="educacion-div-line">
+    <div>
+      <h4 class="educacion-title">Formación Académica</h4>
+      <ul class="educacion-list">
+
+        <li *ngFor="let academica of educationAcadList"><i class="fa-solid fa-play"></i>
+            <p style="display: inline;"><b>{{academica.title}}</b></p>
+            <p>{{academica.universityDuration}}</p></li>
+<!--         
+        <li><i class="fa-solid fa-play"></i><b>Bioquímica</b><br>Universidad Nacional de Rosario |
+          2007-2015.
+        </li> -->
+      </ul>
+    </div>
+    <div>
+      <h4 class="educacion-title">Cursos</h4>
+      <ul class="educacion-list">
+        <li *ngFor="let cursos of educationCursList"><i class="fa-solid fa-play"></i>
+            <p style="display: inline;"><b>{{cursos.title}}</b></p>
+            <p>{{cursos.schoolDuration}}</p></li>
+        <!-- <li><i class="fa-solid fa-play"></i><b>Desarrollo Full-Stack Junior</b><br>Argentina
+          Programa
+          (#SéProgramar, #YoProgramo) | 2022 - En
+          curso.</li> -->
+      </ul>
+    </div>
+    <div>
+      <h4 class="educacion-title">Idiomas</h4>
+      <ul class="educacion-list">
+        <li *ngFor="let idiomas of educationIdiomList"><i class="fa-solid fa-play"></i><b>{{idiomas.languageLevel}}</b></li>
+        <!-- <li><i class="fa-solid fa-play"></i><b>Italiano:</b> básico.</li> -->
+      </ul>
+    </div>
+    <div>
+      <h4 class="educacion-title">Habilidades</h4>
+      <ul class="educacion-list">
+        <li *ngFor="let skill of skillsList"><i class="fa-solid fa-play"></i>{{skill.name}}<progress max="100" value="{{skill.progress}}"></progress></li>
+        <!-- <li><i class="fa-solid fa-play"></i>CSS
+          <progress max="100" value="60"></progress></li>
+        <li><i class="fa-solid fa-play"></i>Bootstrap
+          <progress max="100" value="50"></progress></li>
+        <li><i class="fa-solid fa-play"></i>SASS
+          <progress max="100" value="50"></progress></li>
+        <li><i class="fa-solid fa-play"></i>JavaScript
+          <progress max="100" value="40"></progress></li>
+        <li><i class="fa-solid fa-play"></i>TypeScript
+          <progress max="100" value="20"></progress></li>
+        <li><i class="fa-solid fa-play"></i>React JS
+          <progress max="100" value="20"></progress></li>
+        <li><i class="fa-solid fa-play"></i>Angular
+          <progress max="100" value="20"></progress></li>
+        <li><i class="fa-solid fa-play"></i>Github
+          <progress max="100" value="70"></progress></li> -->
+      </ul>
+    </div>
+  </div>
+</section>
